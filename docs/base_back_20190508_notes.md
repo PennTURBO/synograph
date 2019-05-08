@@ -3,7 +3,7 @@
 - screen
 
 ```
-postgres@privateip:/home/ubuntu$ pg_basebackup -D /dumphere/mimicomop_baseback -Ft -R -Xs -z -P -v -w
+postgres@privateip: somedir$ pg_basebackup -D /dumphere/mimicomop_baseback -Ft -R -Xs -z -P -v -w
 pg_basebackup: initiating base backup, waiting for checkpoint to complete
 pg_basebackup: checkpoint completed
 pg_basebackup: write-ahead log start point: 3A/F000028 on timeline 1
