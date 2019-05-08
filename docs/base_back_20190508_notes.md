@@ -25,27 +25,25 @@ pg_basebackup: checkpoint completed
 pg_basebackup: write-ahead log start point: 3A/F000028 on timeline 1
 pg_basebackup: starting background WAL receiver
 pg_basebackup: created temporary replication slot "pg_basebackup_1171"
-44422629/82849858 kB (53%), 0/1 tablespace (...e/mimicomop_baseback/base.tar.gz)
-```
+82849868/82849868 kB (100%), 1/1 tablespace
+pg_basebackup: write-ahead log end point: 3A/F000130
+pg_basebackup: waiting for background process to finish streaming ...
+pg_basebackup: base backup completed
 
-seperate terminal:
+$ sudo ls -lh /dumphere/mimicomop_baseback/
+total 16G
+-rw------- 1 postgres postgres 16G May  8 18:23 base.tar.gz
+-rw------- 1 postgres postgres 18K May  8 18:23 pg_wal.tar.gz
 
-```
-ubuntu@ip-172-31-88-67:~$ sudo du -sh /dumphere/
-8.6G    /dumphere/
-
-ubuntu@ip-172-31-88-67:~$ date
-Wed May  8 18:04:45 UTC 2019
-
-ubuntu@ip-172-31-88-67:~$ sudo stat /dumphere/mimicomop_baseback
-  File: /dumphere/mimicomop_baseback
-  Size: 4096            Blocks: 8          IO Block: 4096   directory
-Device: 10303h/66307d   Inode: 7864321     Links: 2
-Access: (0700/drwx------)  Uid: (  111/postgres)   Gid: (  116/postgres)
-Access: 2019-05-08 17:42:34.720546376 +0000
-Modify: 2019-05-08 17:37:44.051986448 +0000
-Change: 2019-05-08 17:37:44.051986448 +0000
+$ sudo stat /dumphere/mimicomop_baseback/base.tar.gz
+  File: /dumphere/mimicomop_baseback/base.tar.gz
+  Size: 16919910656     Blocks: 33046712   IO Block: 4096   regular file
+Device: 10303h/66307d   Inode: 7864322     Links: 1
+Access: (0600/-rw-------)  Uid: (  111/postgres)   Gid: (  116/postgres)
+Access: 2019-05-08 17:37:44.051986448 +0000
+Modify: 2019-05-08 18:23:46.217363415 +0000
+Change: 2019-05-08 18:23:46.217363415 +0000
  Birth: -
+$
 ```
 
-Will probaly run for less than one hour and use ~ 17 GB
