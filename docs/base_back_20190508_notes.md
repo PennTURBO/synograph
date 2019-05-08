@@ -33,6 +33,21 @@ seperate terminal:
 ```
 ubuntu@ip-172-31-88-67:~$ sudo du -sh /dumphere/
 8.6G    /dumphere/
+
+ubuntu@ip-172-31-88-67:~$ date
+Wed May  8 18:04:45 UTC 2019
+
+ubuntu@ip-172-31-88-67:~$ sudo stat /dumphere/mimicomop_baseback
+  File: /dumphere/mimicomop_baseback
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 10303h/66307d   Inode: 7864321     Links: 2
+Access: (0700/drwx------)  Uid: (  111/postgres)   Gid: (  116/postgres)
+Access: 2019-05-08 17:42:34.720546376 +0000
+Modify: 2019-05-08 17:37:44.051986448 +0000
+Change: 2019-05-08 17:37:44.051986448 +0000
+ Birth: -
+
+
 ```
 
 Will probaly run for less than one hour and use ~ 17 GB
