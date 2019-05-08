@@ -11,3 +11,4 @@ pg_basebackup: starting background WAL receiver
 pg_basebackup: created temporary replication slot "pg_basebackup_1171"
  4216679/82849858 kB (5%), 0/1 tablespace (...e/mimicomop_baseback/base.tar.gz)
 ```
+Will probaly run for less than one hour and use ~ 20 GB
