@@ -2,6 +2,8 @@
 - sudo su - postgres
 - screen
 
+psql (11.2 (Ubuntu 11.2-1.pgdg18.04+1))
+
 ```
 postgres@privateip: somedir$ pg_basebackup -D /dumphere/mimicomop_baseback -Ft -R -Xs -z -P -v -w
 pg_basebackup: initiating base backup, waiting for checkpoint to complete
