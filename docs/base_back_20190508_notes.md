@@ -25,7 +25,14 @@ pg_basebackup: checkpoint completed
 pg_basebackup: write-ahead log start point: 3A/F000028 on timeline 1
 pg_basebackup: starting background WAL receiver
 pg_basebackup: created temporary replication slot "pg_basebackup_1171"
-18767875/82849858 kB (22%), 0/1 tablespace (...e/mimicomop_baseback/base.tar.gz)
+44422629/82849858 kB (53%), 0/1 tablespace (...e/mimicomop_baseback/base.tar.gz)
+```
+
+seperate terminal:
+
+```
+ubuntu@ip-172-31-88-67:~$ sudo du -sh /dumphere/
+8.6G    /dumphere/
 ```
 
 Will probaly run for less than one hour and use ~ 17 GB
