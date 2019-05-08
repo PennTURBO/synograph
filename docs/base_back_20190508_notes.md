@@ -1,11 +1,25 @@
-- ssh -i secretkey secretuser@secrethost
-- sudo su - postgres
-- screen
-
-psql (11.2 (Ubuntu 11.2-1.pgdg18.04+1))
+ssh -i secretkey secretuser@secrethost
 
 ```
-postgres@privateip: somedir$ pg_basebackup -D /dumphere/mimicomop_baseback -Ft -R -Xs -z -P -v -w
+$ sudo su - postgres
+$ screen
+$ psql mimicomop
+psql (11.2 (Ubuntu 11.2-1.pgdg18.04+1))
+
+mimicomop=# \dn
+      List of schemas
+     Name      |   Owner
+---------------+-----------
+ cdm_synthea10 | mimicuser
+ mimiciii      | mimicuser
+ native        | mimicuser
+ omop          | mimicuser
+ pcori_cdmv3   | mimicuser
+ public        | postgres
+ synpuf_native | mimicuser
+(7 rows)
+
+$ pg_basebackup -D /dumphere/mimicomop_baseback -Ft -R -Xs -z -P -v -w
 pg_basebackup: initiating base backup, waiting for checkpoint to complete
 pg_basebackup: checkpoint completed
 pg_basebackup: write-ahead log start point: 3A/F000028 on timeline 1
