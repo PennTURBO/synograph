@@ -14,4 +14,4 @@ pg_basebackup: created temporary replication slot "pg_basebackup_1171"
 18767875/82849858 kB (22%), 0/1 tablespace (...e/mimicomop_baseback/base.tar.gz)
 ```
 
-Will probaly run for less than one hour and use ~ 16 GB
+Will probaly run for less than one hour and use ~ 17 GB
