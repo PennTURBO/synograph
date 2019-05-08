@@ -1,4 +1,4 @@
-- ssh -i <secretkey> <secretuser>@<secrethost>
+- ssh -i secretkey secretuser@secrethost
 - sudo su - postgres
 - screen
 
