@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sm: <tag:stardog:api:mapping:> .
+@prefix mydata: <http://example.com/resource/> .
+@prefix person: <http://example.com/resource/person/> .
+@prefix hce: <http://example.com/resource/hce/> .
+@prefix diag: <http://example.com/resource/diagnosis/> .
+@prefix rx: <http://example.com/resource/prescription/> .
+
+person:{person_id} a <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+
+mydata:birth_datetime '{birth_datetime}' ;
+mydata:care_site_id '{care_site_id}' ;
+mydata:day_of_birth '{day_of_birth}' ;
+
+mydata:ethnicity_concept_code '{eccc}' ;
+mydata:ethnicity_concept_id '{ethnicity_concept_id}' ;
+mydata:ethnicity_concept_name  '{eccn}' ;
+mydata:ethnicity_source_concept_id '{ethnicity_source_concept_id}' ;
+mydata:ethnicity_source_value '{ethnicity_source_value}' ;
+mydata:ethnicity_vocabulary_id  '{ecvi}' ;
+
+mydata:gender_concept_code  '{gccc}' ;
+mydata:gender_concept_id '{gender_concept_id}' ;
+mydata:gender_concept_name  '{gccn}' ;
+mydata:gender_source_concept_id '{gender_source_concept_id}' ;
+mydata:gender_source_value '{gender_source_value}' ;
+mydata:gender_vocabulary_id  '{gcvi}' ;
+
+mydata:location_id '{location_id}' ;
+mydata:month_of_birth '{month_of_birth}' ;
+mydata:person_id '{person_id}' ;
+mydata:person_source_value '{person_source_value}' ;
+mydata:provider_id '{provider_id}' ;
+
+mydata:race_concept_code  '{rccc}' ;
+mydata:race_concept_id '{race_concept_id}' ;
+mydata:race_concept_name  '{rccn}' ;
+mydata:race_source_concept_id '{race_source_concept_id}' ;
+mydata:race_source_value '{race_source_value}' ;
+mydata:race_vocabulary_id  '{rcvi}' ;
+
+mydata:year_of_birth '{year_of_birth}' ;
+
+sm:map [
+      sm:query """
+select p.*, 
+ec.concept_name as eccn, ec.concept_code as eccc, ec.vocabulary_id as ecvi, 
+gc.concept_name as gccn, gc.concept_code as gccc, gc.vocabulary_id as gcvi, 
+rc.concept_name as rccn, rc.concept_code as rccc, rc.vocabulary_id as rcvi 
+from cdm_synthea10.person p
+join cdm_synthea10.concept ec
+on p.ethnicity_concept_id = ec.concept_id
+join cdm_synthea10.concept gc
+on p.gender_concept_id = gc.concept_id
+join cdm_synthea10.concept rc
+on p.race_concept_id = rc.concept_id
+        """ ;
+] .
+
+
+hce:{visit_occurrence_id} a <http://purl.obolibrary.org/obo/OGMS_0000097> ;
+
+mydata:visit_occurrence_id '{visit_occurrence_id}' ; 
+mydata:person_id '{person_id}' ; 
+mydata:visit_concept_id '{visit_concept_id}' ; 
+mydata:visit_start_date '{visit_start_date}' ; 
+mydata:visit_start_datetime '{visit_start_datetime}' ; 
+mydata:visit_end_date '{visit_end_date}' ; 
+mydata:visit_end_datetime '{visit_end_datetime}' ; 
+mydata:visit_type_concept_id '{visit_type_concept_id}' ; 
+mydata:provider_id '{provider_id}' ; 
+mydata:care_site_id '{care_site_id}' ; 
+mydata:visit_source_value '{visit_source_value}' ; 
+mydata:visit_source_concept_id '{visit_source_concept_id}' ; 
+mydata:admitting_source_concept_id '{admitting_source_concept_id}' ; 
+mydata:admitting_source_value '{admitting_source_value}' ; 
+mydata:discharge_to_concept_id '{discharge_to_concept_id}' ; 
+mydata:discharge_to_source_value '{discharge_to_source_value}' ; 
+mydata:preceding_visit_occurrence_id '{preceding_visit_occurrence_id}' ; 
+mydata:visit_concept_name  '{conname}' ;
+mydata:visit_concept_code  '{concode}' ;
+mydata:visit_vocabulary_id  '{convi}' ;
+
+sm:map [
+      sm:query """
+select vo.*, con.concept_name as conname, con.concept_code as concode, con.vocabulary_id as convi
+from cdm_synthea10.visit_occurrence vo
+join cdm_synthea10.concept con
+on vo.visit_concept_id = con.concept_id
+        """ ;
+] .
+
+
+diag:{condition_occurrence_id} a <http://purl.obolibrary.org/obo/OGMS_0000073> ;
+
+mydata:condition_occurrence_id '{condition_occurrence_id}' ; 
+mydata:person_id '{person_id}' ; 
+mydata:condition_concept_id '{condition_concept_id}' ; 
+mydata:condition_start_date '{condition_start_date}' ; 
+mydata:condition_start_datetime '{condition_start_datetime}' ; 
+mydata:condition_end_date '{condition_end_date}' ; 
+mydata:condition_end_datetime '{condition_end_datetime}' ; 
+mydata:condition_type_concept_id '{condition_type_concept_id}' ; 
+mydata:stop_reason '{stop_reason}' ; 
+mydata:provider_id '{provider_id}' ; 
+mydata:visit_occurrence_id '{visit_occurrence_id}' ; 
+mydata:visit_detail_id '{visit_detail_id}' ; 
+mydata:condition_source_value '{condition_source_value}' ; 
+mydata:condition_source_concept_id '{condition_source_concept_id}' ; 
+mydata:condition_status_source_value '{condition_status_source_value}' ; 
+mydata:condition_concept_code '{concode}' ; 
+mydata:condition_concept_name '{conname}' ; 
+mydata:condition_vocabulary_id '{convi}' ; 
+
+sm:map [
+      sm:query """
+select conocc.*, con.concept_code as concode, con.concept_name as conname, con.vocabulary_id as convi
+from cdm_synthea10.condition_occurrence conocc
+join cdm_synthea10.concept con
+on conocc.condition_concept_id = con.concept_id
+        """ ;
+] .
+
+
+rx:{drug_exposure_id} a <http://purl.obolibrary.org/obo/PDRO_0000001> ;
+
+mydata:drug_exposure_id '{drug_exposure_id}' ; 
+mydata:person_id '{person_id}' ; 
+mydata:drug_concept_id '{drug_concept_id}' ; 
+mydata:drug_exposure_start_date '{drug_exposure_start_date}' ; 
+mydata:drug_exposure_start_datetime '{drug_exposure_start_datetime}' ; 
+mydata:drug_exposure_end_date '{drug_exposure_end_date}' ; 
+mydata:drug_exposure_end_datetime '{drug_exposure_end_datetime}' ; 
+mydata:verbatim_end_date '{verbatim_end_date}' ; 
+mydata:drug_type_concept_id '{drug_type_concept_id}' ; 
+mydata:stop_reason '{stop_reason}' ; 
+mydata:refills '{refills}' ; 
+mydata:quantity '{quantity}' ; 
+mydata:days_supply '{days_supply}' ; 
+mydata:sig '{sig}' ; 
+mydata:route_concept_id '{route_concept_id}' ; 
+mydata:lot_number '{lot_number}' ; 
+mydata:provider_id '{provider_id}' ; 
+mydata:visit_occurrence_id '{visit_occurrence_id}' ; 
+mydata:visit_detail_id '{visit_detail_id}' ; 
+mydata:drug_source_value '{drug_source_value}' ; 
+mydata:drug_source_concept_id '{drug_source_concept_id}' ; 
+mydata:route_source_value '{route_source_value}' ; 
+mydata:dose_unit_source_value '{dose_unit_source_value}' ; 
+mydata:drug_concept_code '{concode}' ;
+mydata:drug_concept_name '{conname}' ;
+mydata:drug_vocabulary_id '{convi}' ;
+
+sm:map [
+      sm:query """
+select de.*, con.concept_code as concode, con.concept_name as conname, con.vocabulary_id as convi
+from cdm_synthea10.drug_exposure de
+join cdm_synthea10.concept con
+on de.drug_concept_id = con.concept_id
+        """ ;
+] .
+
