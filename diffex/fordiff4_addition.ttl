@@ -1,0 +1,17 @@
+prefix fordiff: <http://example.com/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+fordiff:Fruit rdfs:subClassOf fordiff:Organism .
+fordiff:Person rdfs:subClassOf fordiff:Organism .
+fordiff:Vegetable rdfs:subClassOf fordiff:Organism .
+fordiff:apple rdfs:subClassOf fordiff:Fruit .
+fordiff:bananna fordiff:color fordiff:yellow .
+fordiff:bananna rdfs:subClassOf fordiff:Fruit .
+fordiff:carrot fordiff:color fordiff:orange .
+fordiff:carrot rdfs:subClassOf fordiff:Vegetable .
+fordiff:durian rdfs:subClassOf fordiff:Fruit .
+fordiff:mark fordiff:eats fordiff:apple .
+fordiff:mark fordiff:eats fordiff:nutella .
+fordiff:mark fordiff:eats fordiff:bananna .
+fordiff:mark fordiff:eats fordiff:carrot .
+fordiff:mark fordiff:eats fordiff:durian .
+fordiff:mark rdfs:subClassOf fordiff:Person .
