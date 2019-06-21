@@ -13,51 +13,155 @@
   a visual:Graph ;
   visual:child [
       a visual:Box ;
+      visual:depicts <http://example.com/A1c_measurement_assay_145175> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "352"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "1222"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/A1c_measurement_datum_145175> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "359"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1294"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/A1c_valspec_145159> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "285"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1436"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
       visual:depicts <http://example.com/GID_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "222"^^xsd:int ;
-      visual:x "1929"^^xsd:int ;
-      visual:y "317"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1236"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/birth_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "228"^^xsd:int ;
-      visual:x "2714"^^xsd:int ;
-      visual:y "329"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "828"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/birth_date_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "256"^^xsd:int ;
-      visual:x "3502"^^xsd:int ;
-      visual:y "299"^^xsd:int ;
+      visual:x "3880"^^xsd:int ;
+      visual:y "432"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/birth_instant_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "269"^^xsd:int ;
-      visual:x "3074"^^xsd:int ;
-      visual:y "199"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "656"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/blood_glucose_measurement_assay_145163> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "409"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "1464"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/blood_glucose_measurement_datum_145163> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "416"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1820"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/blood_glucose_valspec_145163> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "342"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1904"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/blood_pressure_measurement_assay_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "406"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "2020"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/bmi_calc_145160> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "268"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "1678"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/bmi_datum_145160> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "282"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "2146"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/bmi_valspec_145160> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "286"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2146"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/diastolic_bp_datum_145161> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "324"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "2546"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/diastolic_bp_valspec_145161> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "328"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2546"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/dob_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "224"^^xsd:int ;
-      visual:x "3074"^^xsd:int ;
-      visual:y "299"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "242"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/hce_15512> ;
       visual:height "18"^^xsd:int ;
       visual:width "234"^^xsd:int ;
-      visual:x "1421"^^xsd:int ;
-      visual:y "559"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "1264"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "234"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1678"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -65,7 +169,23 @@
       visual:height "18"^^xsd:int ;
       visual:width "252"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "587"^^xsd:int ;
+      visual:y "1920"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_pk_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "252"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "1778"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_pk_symbol_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "296"^^xsd:int ;
+      visual:x "458"^^xsd:int ;
+      visual:y "1434"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -73,31 +193,127 @@
       visual:height "18"^^xsd:int ;
       visual:width "284"^^xsd:int ;
       visual:x "458"^^xsd:int ;
-      visual:y "537"^^xsd:int ;
+      visual:y "1534"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_start_15512> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "262"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "728"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_start_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "262"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "1322"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_start_tmd_15512> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "289"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "456"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/hce_start_tmd_17616> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "289"^^xsd:int ;
+      visual:x "458"^^xsd:int ;
+      visual:y "342"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/length_measurement_assay_145157> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "366"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "454"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/length_measurement_datum_145157> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "373"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "384"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/length_qual_946> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "265"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "384"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/length_valspec_145157> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "299"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1336"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/mass_measurement_assay_145159> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "359"^^xsd:int ;
+      visual:x "913"^^xsd:int ;
+      visual:y "668"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/mass_measurement_datum_145159> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "366"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "626"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/mass_qual_946> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "258"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "1122"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/mass_valspec_145159> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "292"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1678"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/neonate_stage_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "279"^^xsd:int ;
-      visual:x "3074"^^xsd:int ;
-      visual:y "499"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "928"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/neonate_stage_temp_region_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "351"^^xsd:int ;
-      visual:x "3502"^^xsd:int ;
-      visual:y "399"^^xsd:int ;
+      visual:x "3880"^^xsd:int ;
+      visual:y "732"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/patient_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "240"^^xsd:int ;
-      visual:x "2338"^^xsd:int ;
-      visual:y "429"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1122"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -105,7 +321,7 @@
       visual:height "18"^^xsd:int ;
       visual:width "255"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "387"^^xsd:int ;
+      visual:y "968"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -113,7 +329,7 @@
       visual:height "18"^^xsd:int ;
       visual:width "299"^^xsd:int ;
       visual:x "458"^^xsd:int ;
-      visual:y "437"^^xsd:int ;
+      visual:y "1046"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -121,15 +337,15 @@
       visual:height "18"^^xsd:int ;
       visual:width "282"^^xsd:int ;
       visual:x "458"^^xsd:int ;
-      visual:y "235"^^xsd:int ;
+      visual:y "242"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/patient_role_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "265"^^xsd:int ;
-      visual:x "1929"^^xsd:int ;
-      visual:y "601"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "1264"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -137,31 +353,71 @@
       visual:height "18"^^xsd:int ;
       visual:width "286"^^xsd:int ;
       visual:x "21"^^xsd:int ;
-      visual:y "185"^^xsd:int ;
+      visual:y "190"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://example.com/sex_946> ;
       visual:height "18"^^xsd:int ;
       visual:width "219"^^xsd:int ;
-      visual:x "1929"^^xsd:int ;
-      visual:y "501"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "698"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/systolic_bp_datum_145162> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "319"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "2346"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.com/systolic_bp_valspec_145162> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "323"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2346"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/BFO_0000035> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "147"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "728"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/BFO_0000038> ;
       visual:height "18"^^xsd:int ;
       visual:width "231"^^xsd:int ;
-      visual:x "4026"^^xsd:int ;
-      visual:y "349"^^xsd:int ;
+      visual:x "4404"^^xsd:int ;
+      visual:y "582"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/BFO_0000148> ;
       visual:height "18"^^xsd:int ;
       visual:width "233"^^xsd:int ;
-      visual:x "3502"^^xsd:int ;
-      visual:y "199"^^xsd:int ;
+      visual:x "3880"^^xsd:int ;
+      visual:y "632"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/HTN_00000000> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "292"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2646"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/HTN_00000001> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "287"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2446"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -169,47 +425,95 @@
       visual:height "18"^^xsd:int ;
       visual:width "92"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "487"^^xsd:int ;
+      visual:y "1122"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/IAO_0000414> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "194"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "556"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/IAO_0000416> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "191"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "314"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/IAO_0000578> ;
       visual:height "18"^^xsd:int ;
       visual:width "203"^^xsd:int ;
-      visual:x "1421"^^xsd:int ;
-      visual:y "317"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "868"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
       visual:height "18"^^xsd:int ;
       visual:width "129"^^xsd:int ;
-      visual:x "2714"^^xsd:int ;
-      visual:y "429"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "1364"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/OBI_0000093> ;
       visual:height "18"^^xsd:int ;
       visual:width "113"^^xsd:int ;
-      visual:x "2338"^^xsd:int ;
-      visual:y "629"^^xsd:int ;
+      visual:x "3880"^^xsd:int ;
+      visual:y "1264"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/OBI_0000418> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "344"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1394"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/OBI_0000445> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "187"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "526"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/OBI_0001933> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "151"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1714"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/OBI_0200000> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "158"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1536"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/OGMS_0000097> ;
       visual:height "18"^^xsd:int ;
       visual:width "168"^^xsd:int ;
-      visual:x "1929"^^xsd:int ;
-      visual:y "701"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "1832"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/OMRSE_00000141> ;
       visual:height "18"^^xsd:int ;
       visual:width "200"^^xsd:int ;
-      visual:x "2338"^^xsd:int ;
-      visual:y "273"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1236"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -217,31 +521,103 @@
       visual:height "18"^^xsd:int ;
       visual:width "271"^^xsd:int ;
       visual:x "458"^^xsd:int ;
-      visual:y "135"^^xsd:int ;
+      visual:y "90"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/PATO_0000047> ;
       visual:height "18"^^xsd:int ;
       visual:width "124"^^xsd:int ;
-      visual:x "2338"^^xsd:int ;
-      visual:y "529"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "912"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/PATO_0000122> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "200"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "384"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/PATO_0000125> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "80"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "1122"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/UBERON_0007221> ;
       visual:height "18"^^xsd:int ;
       visual:width "127"^^xsd:int ;
-      visual:x "3502"^^xsd:int ;
-      visual:y "499"^^xsd:int ;
+      visual:x "3880"^^xsd:int ;
+      visual:y "928"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://purl.obolibrary.org/obo/UBERON_0035946> ;
       visual:height "18"^^xsd:int ;
       visual:width "167"^^xsd:int ;
-      visual:x "3074"^^xsd:int ;
-      visual:y "399"^^xsd:int ;
+      visual:x "3452"^^xsd:int ;
+      visual:y "828"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000001> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "111"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "1464"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000002> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "104"^^xsd:int ;
+      visual:x "3042"^^xsd:int ;
+      visual:y "1614"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000009> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "100"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1614"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000015> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "110"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1336"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000086> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "2146"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000187> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "93"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1436"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://purl.obolibrary.org/obo/UO_0000272> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "173"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "2446"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -249,15 +625,15 @@
       visual:height "18"^^xsd:int ;
       visual:width "136"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "287"^^xsd:int ;
+      visual:y "142"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://transformunify.org/ontologies/TURBO_0000506> ;
       visual:height "18"^^xsd:int ;
       visual:width "182"^^xsd:int ;
-      visual:x "1421"^^xsd:int ;
-      visual:y "87"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "768"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -265,23 +641,55 @@
       visual:height "18"^^xsd:int ;
       visual:width "177"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "87"^^xsd:int ;
+      visual:y "768"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://transformunify.org/ontologies/TURBO_0010153> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "242"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2004"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://transformunify.org/ontologies/TURBO_0010154> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "342"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "1536"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://transformunify.org/ontologies/TURBO_0010155> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "247"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1110"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <http://transformunify.org/ontologies/TURBO_0010166> ;
       visual:height "18"^^xsd:int ;
       visual:width "233"^^xsd:int ;
-      visual:x "1421"^^xsd:int ;
-      visual:y "659"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "1920"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
-      visual:depicts <http://www.ebi.ac.uk/efo/EFO_0004950> ;
+      visual:depicts <http://www.ebi.ac.uk/efo/EFO_0004340> ;
       visual:height "18"^^xsd:int ;
-      visual:width "118"^^xsd:int ;
-      visual:x "2714"^^xsd:int ;
-      visual:y "229"^^xsd:int ;
+      visual:width "141"^^xsd:int ;
+      visual:x "2125"^^xsd:int ;
+      visual:y "2246"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://www.ebi.ac.uk/efo/EFO_0004374> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "169"^^xsd:int ;
+      visual:x "2637"^^xsd:int ;
+      visual:y "1904"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
@@ -289,15 +697,15 @@
       visual:height "18"^^xsd:int ;
       visual:width "339"^^xsd:int ;
       visual:x "913"^^xsd:int ;
-      visual:y "187"^^xsd:int ;
+      visual:y "242"^^xsd:int ;
     ] ;
   visual:child [
       a visual:Box ;
       visual:depicts <https://github.com/pennbiobank/turbo/issues/269> ;
       visual:height "18"^^xsd:int ;
       visual:width "339"^^xsd:int ;
-      visual:x "1421"^^xsd:int ;
-      visual:y "459"^^xsd:int ;
+      visual:x "1514"^^xsd:int ;
+      visual:y "968"^^xsd:int ;
     ] ;
   visual:depicts <http://example.org/more_generic> ;
   rdfs:label "<http://example.org/more_generic> Graph" ;
