@@ -1,6 +1,7 @@
 # this appears to be a brittle query
 # edits that result in a  syntax error 
 # might result in a failure that persists even after the error is fixed
+# and can only be remedied by opening a “private” browser window… caching?
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 select distinct ?st (group_concat(distinct ?sl) as ?slc) ?ot 
