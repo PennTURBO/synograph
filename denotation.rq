@@ -1,0 +1,21 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select distinct ?st (group_concat(?sl) as ?slc) ?ot (group_concat(?ol) as ?olc) where {
+    graph <http://www.itmat.upenn.edu/biobank/expanded> {
+        ?s <http://purl.obolibrary.org/obo/IAO_0000219> ?o .
+    }
+    optional {
+        ?s a ?st .
+        optional {
+            ?st rdfs:label ?sl .
+        }
+    }
+    optional {
+        ?o a ?ot .
+        optional {
+            ?ot rdfs:label ?ol .
+        }
+    }
+    filter (?ot != owl:NamedIndividual)
+}
+group by ?st ?ot
