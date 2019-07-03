@@ -1,6 +1,11 @@
+# this appear to be a brittle query
+# edits that result ina  syntax error might resutl in a failure that persists even after the error is fixed
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-select distinct ?st (group_concat(?sl) as ?slc) ?ot (group_concat(?ol) as ?olc) where {
+select distinct ?st (group_concat(distinct ?sl) as ?slc) ?ot 
+(group_concat(distinct lcase(str(?ol));
+        separator=";") as ?olc) 
+where {
     graph <http://www.itmat.upenn.edu/biobank/expanded> {
         ?s <http://purl.obolibrary.org/obo/IAO_0000219> ?o .
     }
