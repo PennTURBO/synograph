@@ -2,15 +2,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sm: <tag:stardog:api:mapping:> .
 @prefix mydata: <http://example.com/resource/> .
-@prefix persondm: <http://example.com/resource/person_dm/> .
-@prefix hcedm: <http://example.com/resource/hce_dm/> .
-@prefix diagdm: <http://example.com/resource/diagnosis_dm/> .
-@prefix rxdm: <http://example.com/resource/prescription_dm/> .
-@prefix lof: <http://example.com/resource/lofpred_dm/> .
-@prefix genoid: <http://example.com/resource/genoid2encounter_dm/> .
-@prefix measdm: <http://example.com/resource/measurement_dm/> .
+@prefix person: <http://example.com/resource/person/> .
+@prefix hce: <http://example.com/resource/hce/> .
+@prefix diag: <http://example.com/resource/diagnosis/> .
+@prefix rx: <http://example.com/resource/prescription/> .
 
-persondm:{person_id} a <http://transformunify.org/ontologies/TURBO_0010161> ; 
+person:{person_id} a <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
 
 mydata:birth_datetime '{birth_datetime}' ;
 mydata:care_site_id '{care_site_id}' ;
@@ -62,7 +59,8 @@ on p.race_concept_id = rc.concept_id
 ] .
 
 
-hcedm:{visit_occurrence_id} a <http://transformunify.org/ontologies/TURBO_0010158> ; 
+hce:{visit_occurrence_id} a <http://purl.obolibrary.org/obo/OGMS_0000097> ;
+
 mydata:visit_occurrence_id '{visit_occurrence_id}' ; 
 mydata:person_id '{person_id}' ; 
 mydata:visit_concept_id '{visit_concept_id}' ; 
@@ -94,7 +92,8 @@ on vo.visit_concept_id = con.concept_id
 ] .
 
 
-diagdm:{condition_occurrence_id} a <http://transformunify.org/ontologies/TURBO_0010160> ; 
+diag:{condition_occurrence_id} a <http://purl.obolibrary.org/obo/OGMS_0000073> ;
+
 mydata:condition_occurrence_id '{condition_occurrence_id}' ; 
 mydata:person_id '{person_id}' ; 
 mydata:condition_concept_id '{condition_concept_id}' ; 
@@ -124,7 +123,8 @@ on conocc.condition_concept_id = con.concept_id
 ] .
 
 
-rxdm:{drug_exposure_id} a <http://transformunify.org/ontologies/TURBO_0010159> ;
+rx:{drug_exposure_id} a <http://purl.obolibrary.org/obo/PDRO_0000001> ;
+
 mydata:drug_exposure_id '{drug_exposure_id}' ; 
 mydata:person_id '{person_id}' ; 
 mydata:drug_concept_id '{drug_concept_id}' ; 
@@ -161,7 +161,8 @@ on de.drug_concept_id = con.concept_id
         """ ;
 ] .
 
-measdm:{measurement_id} a <http://transformunify.org/ontologies/TURBO_0010162> ;
+meas:{measurement_id} a <http://purl.obolibrary.org/obo/IAO_0000027> ;
+
 mydata:measurement_id '{measurement_id}' ;
 mydata:person_id '{person_id}' ;
 mydata:measurement_concept_id '{measurement_concept_id}' ;
@@ -182,46 +183,4 @@ mydata:measurement_source_value '{measurement_source_value}' ;
 mydata:measurement_source_concept_id '{measurement_source_concept_id}' ;
 mydata:unit_source_value '{unit_source_value}' ;
 mydata:value_source_value '{value_source_value}' ;
-
-
-sm:map [
-      sm:query """
-select
-        meas.*,
-        mc.concept_code as mccode,
-        mc.concept_name as mcname,
-        mc.vocabulary_id as mcvi,
-        uc.concept_code as uccode,
-        uc.concept_name as ucname,
-        uc.vocabulary_id as ucvi
-from
-        cdm_synthea10.measurement meas
-join cdm_synthea10.concept mc on
-        meas.measurement_concept_id = mc.concept_id
-join cdm_synthea10.concept uc on
-        meas.unit_concept_id = uc.concept_id
-        """ ;
-] .
-
-
-lof:{lof_pk} a <http://transformunify.org/ontologies/TURBO_0010144> ;
-
-mydata:genoid '{genoid}' ;
-mydata:gene '{gene}' ;
-mydata:lof_zygosity '{lof_zygosity}' ;
-
-sm:map [
-      sm:table "cdm_synthea10.turbo_lof_preds" ;
-] .
-
-
-genoid:{genoid2encounter_pk} a <http://transformunify.org/ontologies/TURBO_0010162> ;
-
-mydata:genoid '{genoid}' ;
-mydata:visit_occurrence_id '{visit_occurrence_id}' ;
-
-sm:map [
-      sm:table "turbo_genoid2encounter" ;
-] .
-
 
